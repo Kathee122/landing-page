@@ -1,0 +1,286 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+header, section{
+    padding: 100px 0; /** 100px (top y bottom) */
+}
+
+h1{
+    color: #FFF;
+    font-size: 4rem; /* vmin */
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.texto_secundario{
+    font-size: 2rem;
+    text-align: center;
+    color: #FFF;
+    letter-spacing: 2px;
+    font-weight: 50;
+}
+
+/** menu de navegacion */
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: #AB3338;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+nav a{
+    color: white;
+    padding: 0 20px; /** 20px (izquierda / derecha) */
+    transition: all .3s;
+}
+
+
+/** apartado del header */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://elcorporativocr.com/wp-content/uploads/2021/04/Galerias-2021-M.jpeg");
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: bottom;
+    flex-flow: column nowrap;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+
+
+/** contenido principal */
+.box-center{
+    width: 80%;
+    margin: auto;
+}
+
+h3{
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #222;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+h6{
+    font-size: small;
+    color: #444;
+    font-weight: 50;
+}
+
+
+.text-parrafo{
+    line-height: 40px;
+    color: #666666;
+}
+
+
+
+/* apartado de ofertas */
+.oferta{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+/* apartado de menus de hamburguesa */
+.menu_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.card{
+    width: 30%;
+    height: 300px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    background-size: cover !important;
+    background-position: center !important;
+    cursor: default;
+    text-align: center;
+}
+
+.card-pant{
+    width: 30%;
+    height: 300px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    background-size: cover !important;
+    background-position: center !important;
+    cursor: default;
+    text-align: center;
+}
+
+.card-calzado{
+    width: 30%;
+    height: 300px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    background-size: cover !important;
+    background-position: center !important;
+    cursor: default;
+    text-align: center;
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.card-title {
+    font-size: 40px;
+    font-weight: 400;
+    padding: 10px 0 0 0;
+    color: #222;
+}
+
+.card:hover .card-container {
+    opacity: 1;
+}
+
+.card:nth-child(1) {
+    background: url("https://sm.pcmag.com/pcmag_au/news/s/samsung-fr/samsung-freshens-up-galaxy-s22-with-purple-hue_3dyp.jpg");
+}
+  
+.card:nth-child(2) {
+background: url("https://i.ytimg.com/vi/VTDdURvQXWI/maxresdefault.jpg");
+}
+
+.card:nth-child(3) {
+background: url("https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2023/04/Redmi-Note-12-Precios-caracteristicas-y-todo-lo-que-debes-saber-de-los-nuevos-telefonos-de-Xiaomi.jpg");
+}
+
+.card-pant:hover .card-container {
+    opacity: 1;
+}
+
+.card-pant:nth-child(1) {
+    background: url("https://cuscoinformatico.com/storage/laptop-hp-i3-02.jpg");
+}
+  
+.card-pant:nth-child(2) {
+background: url("https://cdn11.bigcommerce.com/s-yu9pzp8lys/images/stencil/1280x1280/products/1318/3591/lenovo-laptops-thinkbook-15-gen-2-intel-gallery__13784.1661873400.jpg?c=2?imbypass=on");
+}
+
+.card-pant:nth-child(3) {
+background: url("https://sm.ign.com/t/ign_nordic/deal/t/this-dell-/this-dell-g16-16-gaming-laptop-with-intel-core-i9-alder-lake_szdj.1280.jpg");
+}
+
+.card-calzado:hover .card-container {
+    opacity: 1;
+}
+
+.card-calzado:nth-child(1) {
+    background: url("https://i.ytimg.com/vi/9iUqp5oSxEU/maxresdefault.jpg");
+}
+  
+.card-calzado:nth-child(2) {
+background: url("https://media.vogue.mx/photos/63739c4477cf76e685bdce76/16:9/w_1280,c_limit/1242292441");
+}
+
+.card-calzado:nth-child(3) {
+background: url("https://i.ytimg.com/vi/tX1b_3_dPwY/maxresdefault.jpg");
+}
+
+.tachado{
+    text-decoration: line-through;
+    color:red;
+}
+
+
+
+
+/** animaciones con before */
+.overlay, .header::before, .oferta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.header *, .oferta * {
+    position: relative;
+}
+
+
+/** media query */
+@media (max-width:576px){
+    h1{
+        font-size: 3rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card-pant{
+        width: 100%;
+    }
+
+    .card-calzado{
+        width: 100%;
+    }
+}
+
+@media (min-width:992px){
+    /* apartado de footer */
+.footer{
+    background-color: #AB3338;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+}
+}
+
+.footer{
+    background-color: #AB3338;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+}
+
